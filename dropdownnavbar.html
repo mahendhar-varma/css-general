@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    ul {
+        margin: 0;
+        padding:0;
+        list-style-type: none;
+        background-color: rgb(1, 10, 10);
+        overflow: hidden;
+    }
+    li {
+        float: left;
+    }
+    li a {
+        display: block;
+        padding:15px 18px;
+        text-align: center;
+        color: aliceblue;
+        text-decoration: none;
+       
+    }
+    li a:hover:not(.active) {
+      background-color:pink;
+     
+    }
+    .active {
+        background-color: rgb(12, 122, 122);
+    }
+    
+    ul li ul li {
+        display:none;
+        box-sizing:content-box;
+    }
+    ul li:hover ul li {
+        display:block;
+        box-sizing:content-box;
+    }
+    .drop {
+        position:absolute;
+        display: block;
+        
+        
+      
+        
+
+    }
+
+
+</style>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#"> home</a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">consult</a></li>
+            <li style="float:right" ><a class="active" href="#">drop</a>
+            <ul class="drop">
+                <li><a href="#">AAA</a></li>
+                <li><a href="#">BBB</a></li>
+                <li><a href="#">CCC</a></li>
+                <li><a href="#">DDD</a></li>
+            </ul>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: black;
+    }
+    .main {
+        width: 100%;
+        height:500px;
+
+    }
+    .down {
+        width:50%;
+        height:100%;
+        float:left;
+    }
+    .down1 {
+        width:50%;
+        height:100%;
+        float:right;
+    }
+    body {
+    font-size:30px ;
+  }
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+   position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+
+ 
+}
+
+li {
+  float: left;
+  border-right:1px solid #0d0000;
+}
+.headdingsize {
+    font-size: 20px;
+    color: aliceblue;
+}
+
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+   background-color: #2504aa;
+}
+
+li a:hover {
+  background-color: #0d0000;
+}
+
+.active {
+  background-color: #2504aa;
+  border-radius: 80px;
+  font-size:20px;
+}
+img:hover {
+    opacity:0.9;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="#home">settings</a></li>
+  <li><a href="#news">new</a></li>
+  <li><a href="#contact">old</a></li>
+  <li style="float:right"><a      href="#a">open</a></li>
+</ul>
+
+
+    <h1 class="headdingsize"> images........</h1>
+
+    <div class="main">
+        <img  class="down"src="nature.jpeg" alt="nature"
+        >
+        <img  class="down1" src="way.jpeg" alt="naturase"
+        >
+
+    </div>
+</body>
+</html>
